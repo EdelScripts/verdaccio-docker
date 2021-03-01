@@ -7,4 +7,7 @@ services:
     ports:
       - 4873:4873
     volumes:
-      - ./verdaccio:/verdaccio
+      - ./storage:/verdaccio/storage
+      - ./config:/verdaccio/conf
+      - ./plugins:/verdaccio/plugins
+      - ./logs:/verdaccio/logs
